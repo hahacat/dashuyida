@@ -1,0 +1,42 @@
+<view class="banner">
+  <image src="/pages/img/introduce/banner.jpg"></image>
+</view>
+<view class = container>
+  <view class="content">
+    <view class="wrapper {{currentIndex == index ? 'active' : ''}}" wx:for="{{swiperData}}" wx:key="{{index}}" id="{{index}}" bindtap="change">
+      <image src="{{item.icon}}" class="img"></image>
+      <text>医疗</text>
+      <text>{{item.title}}</text>
+    </view>
+    <!-- <view class="wrapper">
+      <image src="/pages/img/introduce/knowledge.svg"></image>
+      <text>医疗</text>
+      <text>大数据平台</text>
+    </view>
+    <view class="wrapper">
+      <image src="/pages/img/introduce/intr.svg"></image>
+      <text>医疗</text>
+      <text>大数据平台</text>
+    </view>
+    <view class="wrapper">
+      <image src="/pages/img/introduce/tool.svg"></image>
+      <text>医疗</text>
+      <text>大数据平台</text>
+    </view> -->
+  </view>
+  <swiper current="{{currentIndex}}" bindchange="swiperChange">
+    <swiper-item  wx:for="{{swiperData}}" wx:key="{{index}}">
+      <text class="title">医疗{{item.title}}</text>
+      <image src="{{item.image}}"></image>
+      <text class="text">{{item.content}}</text>
+    </swiper-item>
+  </swiper>
+</view>
+<view>
+  <rich-text>
+ 
+  </rich-text>
+
+
+
+</view>

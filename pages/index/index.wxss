@@ -1,0 +1,108 @@
+/**index.wxss**/
+.banner image {
+  width: 750rpx;
+  height: 800rpx;
+}
+/* 第一部分 */
+.about .header {
+  padding: 55rpx 55rpx 0;
+}
+.about .header .index {
+  font-size: 46rpx;
+  color: #f00;
+  line-height: 100rpx;
+  margin-right: 35rpx;
+}
+.about .header .text {
+  font-size: 46rpx;
+  line-height: 100rpx;
+  margin-right: 35rpx;
+  position: relative;
+}
+.about .header .text::after {
+  position: absolute;
+  bottom: -28rpx;
+  left: 0;
+  content: '';
+  width: 85rpx;
+  height: 8rpx;
+  background: #f00;
+}
+
+.about .content .text{
+  display: block;
+  width: 490rpx;
+  margin: 0 auto;
+  padding: 35rpx 0 55rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}
+
+.about swiper {
+  background: #fafafa;
+  padding: 80rpx 0;
+}
+.about swiper swiper-item {
+  /* width: 250rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about swiper image{
+  width: 160rpx;
+  height: 140rpx;
+  margin-bottom: 35rpx;
+  /* display: block; */
+}
+.about swiper text {
+  display: block;
+  width: 200rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 58rpx;
+}
+
+.about swiper .e-text {
+  line-height: 35rpx;
+  color: #999;
+}
+.wish video, .wish image {
+  display: block;
+  width: 640rpx;
+  height: 408rpx;
+  margin: 50rpx auto 68rpx;
+}
+
+/* 第三部分 */
+.wish {
+  background: #29282e;
+  color: #fff;
+}
+.wish .header .text::after {
+  background: #fff;
+}
+.wish .header .index {
+  color: #fff;
+}
+/* 第四部分 */
+.link .header {
+  margin-bottom: 35rpx;
+}
+.link .content .text{
+  display: block;
+  width: 490rpx;
+  margin: 0 auto;
+  padding: 0 0 10rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}
+
+.map-box {
+  padding-top: 45rpx;
+  padding-bottom: 10rpx;
+}
+map {
+  display: block;
+  width: 100%;
+  height: 400rpx;
+}

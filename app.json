@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/introduce/introduce"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "大树医达",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "pages/img/home.png",
+      "selectedIconPath": "pages/img/home_selected.png"
+    },{
+      "pagePath": "pages/introduce/introduce",
+      "text": "产品介绍",
+      "iconPath": "pages/img/introduce.png",
+      "selectedIconPath": "pages/img/introduce_selected.png"
+    }],
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectColor": "#f00"
+  }
+}

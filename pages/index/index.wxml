@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src="/pages/img/index/banner.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="about">
+    <view class="header">
+      <text class="index">01</text>
+      <text class="text">关于我们</text>
+    </view>
+    <view class="content">
+      <text class="text">
+      北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际依靠水平的高科持企业，专注于多源异构数据处理、深度挖掘与机器学习。
+      </text>
+      <swiper display-multiple-items="3">
+        <swiper-item wx:for="{{swiperData}}" wx:key="{{index}}">
+          <image src="/pages/img/index/{{item.image}}" mode="aspectFit"></image>
+          <text>{{item.cResume}}</text>
+          <text class="e-text">{{item.eResume}}</text>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="about">
+    <view class="header">
+      <text class="index">02</text>
+      <text class="text">团队领袖——邓侃CTO</text>
+    </view>
+    <view class="content">
+      <text class="text">
+      大树医达拥有自主知识产权的医疗大数据系统，该系统把超大规模的去计算系统，深度学习和数据挖掘等大数据算法应用到医疗领域，自动化、智能化融汇多源异构的医疗数据，把自然语言的非结构化病历，自动转化为结构化的病历，从中挖掘出医生的临床诊断和治疗经验，助力医疗大数据产业发展，促进医疗卫生健康事业进步，服务社会，造福人类。
+      </text>
+    </view>
+  </view>
+  <view class="about wish">
+    <view class="header">
+      <text class="index">03</text>
+      <text class="text">我们的愿景</text>
+    </view>
+    <view class="content">
+      <text class="text">
+      大树医达拥有自主知识产权的医疗大数据系统，该系统把超大规模的去计算系统，深度学习和数据挖掘等大数据算法应用到医疗领域，自动化、智能化融汇多源异构的医疗数据，把自然语言的非结构化病历，自动转化为结构化的病历，从中挖掘出医生的临床诊断和治疗经验，助力医疗大数据产业发展，促进医疗卫生健康事业进步，服务社会，造福人类。
+      </text>
+      <!-- <video src="/pages/img/index/hd.mp4" poster="https://i.52112.com/icon/jpg/256/20190905/57171/2542842.jpg" controls></video> -->
+      <image src="/pages/img/index/back.png"></image>
+    </view>
+  </view>
+  <view class="about link">
+    <view class="header">
+      <text class="index">04</text>
+      <text class="text">联系我们</text>
+    </view>
+    <view class="content">
+      <text class="text">地址：北京市海淀区</text>
+      <text class="text">公司邮箱：</text>
+      <text class="text">公司网址：</text>
+      <view class="map-box">
+        <map id="map" latitude="40.052905" longitude="116.293341" markers="{{markers}}"></map>
+      </view>
+    </view>
+  </view>
+</view>

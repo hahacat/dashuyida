@@ -1,0 +1,65 @@
+/* pages/introduce/introduce.wxss */
+.banner image {
+  width: 750rpx;
+  height: 300rpx;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80rpx;
+  padding-bottom: 60rpx;
+  background: #fafafa;
+}
+.wrapper image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-bottom: 30rpx
+}
+.active .img .st0 {
+  fill: #f00;
+}
+.wrapper text {
+  font-size: 24rpx;
+  line-height: 36rpx;
+}
+.active text {
+  color: #f00;
+}
+
+swiper {
+  padding: 0 55rpx;
+  height: 800rpx;
+}
+swiper .title {
+  font-size: 40rpx;
+  line-height: 160rpx;
+  position: relative;
+  padding-left: 43rpx;
+  display: block;
+  color: #f00;
+}
+swiper .title::before{
+  width: 8rpx;
+  height: 40rpx;
+  background: #f00;
+  content: '';
+  position: absolute;
+  top: 60rpx;
+  left: 0;
+}
+swiper image {
+  width: 642rpx;
+  height: 284rpx;
+}
+swiper .text {
+  display: block;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}
